@@ -90,4 +90,6 @@ for boarding_pass in boarding_passes:
     if seat_id > highest_seat_id:
         highest_seat_id = seat_id
 
+end_time = time.monotonic() - start_time
+
 print(f"Highest seat id found in boarding passes={highest_seat_id}")
