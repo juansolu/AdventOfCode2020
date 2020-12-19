@@ -1,6 +1,6 @@
 import re
 import pprint
-
+import time
 
 def create_full_bag_inventory_lookup(entries):
     bag_token_map = {}
@@ -56,7 +56,6 @@ def find_bag_color_fit(bag_fit_id, bag_fit_lookup):
 
 bag_token_find = "shiny gold"
 
-import time
 my_file = open("example.txt", "r")
 entries = [x.strip() for x in my_file.readlines()]
 bag_fit_lookup = create_full_bag_inventory_lookup(entries)
